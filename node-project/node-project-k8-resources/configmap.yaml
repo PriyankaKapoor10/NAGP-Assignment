@@ -6,6 +6,6 @@ metadata:
   labels:
     app: "app-settings"
 data:
-  DB_URL: "mongodb://mongodb:27017/mongodb"
+  DB_URL: "mongodb://mongo:27017/testDatabase"
   DB_USERNAME: "priyankagrover2804"
-  
+   
