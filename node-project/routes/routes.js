@@ -7,8 +7,9 @@ const Model = require('../models/model');
 
 
 //Post Method
-router.post('/insertDoc', async (req, res) => {
+router.post('/post', async (req, res) => {
     const data = new Model({
+        
         name: req.body.name,
         age: req.body.age
     })

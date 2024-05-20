@@ -18,7 +18,7 @@ spec:
       containers:
       - name: nodejs-container
         #image: gaganshera/node-image:1
-        image: kapoorpriyanka/web-application:3
+        image: kapoorpriyanka/web-application:4
         #image: gaganshera/nagp-2024-node-devops-app
 
         ports:
