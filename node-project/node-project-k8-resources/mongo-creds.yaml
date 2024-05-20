@@ -1,0 +1,11 @@
+apiVersion: "v1"
+kind: "ConfigMap"
+metadata:
+  name: "mongo-creds"
+  namespace: "default"
+  labels:
+    app: "mongo-creds"
+data:
+  username: "myroot"
+  initdb: "testDatabase"
+   
