@@ -7,7 +7,7 @@ metadata:
     app: "app-settings"
 data:
   #DB_URL: "mongodb://mongodb:27017/testDatabase"
-  DB_URL: "mongodb://myroot:password123@mongodb:27017/admin"
+  #DB_URL: "mongodb://myroot:password123@mongodb:27017/admin"
   DB_USERNAME: "myroot"
   DB_INITDB: "testDatabase"
   DB_HOST: "mongodb"
