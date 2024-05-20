@@ -15,11 +15,18 @@ spec:
       labels:
         app: node-app
     spec:
+      terminationGracePeriodSeconds: 30
       containers:
       - name: nodejs-container
-        #image: gaganshera/node-image:1
-        image: kapoorpriyanka/web-application:4
-        #image: gaganshera/nagp-2024-node-devops-app
+        image: kapoorpriyanka/web-application:5
+        imagePullPolicy: Always #Added for showing rolling updates
+        resources:
+          requests:
+            memory: "250Mi"  #Added to showcase scale up and down using HPA on Standard Cluster
+            cpu: "250m"
+          limits:
+            memory: "500Mi"  #Added to showcase scale up and down using HPA on Standard Cluster
+            cpu: "500m"
 
         ports:
         - name: http
