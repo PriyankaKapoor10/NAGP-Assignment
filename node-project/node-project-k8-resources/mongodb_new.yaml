@@ -16,25 +16,18 @@ spec:
       containers:
       - name: mongodb
         image: mongo:4.0.17
-        env:
-        - name: MONGO_INITDB_ROOT_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: mongo-secret
-              key: password
-        
+         envFrom:
+        - configMapRef:
+           name: mongo-creds
+        - secretRef:
+            name: mongo-secret
+            
         ports:
           - containerPort: 27017
         volumeMounts:
           - name: pvc
             mountPath: /data/db
-          - name: mongo-config
-            mountPath: /config
-        volumes:
-        - name: mongo-config
-          configMap:
-            name: mongo-creds
-
+ 
   volumeClaimTemplates:
     - metadata:
         name: pvc

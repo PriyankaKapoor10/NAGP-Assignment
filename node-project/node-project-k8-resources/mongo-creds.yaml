@@ -6,6 +6,6 @@ metadata:
   labels:
     app: "mongo-creds"
 data:
-  username: "myroot"
-  initdb: "testDatabase"
+  MONGO_INITDB_ROOT_USERNAME: "myroot"
+  MONGO_INITDB_DATABASE: "testDatabase"
    
