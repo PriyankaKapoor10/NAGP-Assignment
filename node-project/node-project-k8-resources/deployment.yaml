@@ -19,7 +19,7 @@ spec:
       containers:
       - name: nodejs-container
         image: kapoorpriyanka/web-application:5
-        imagePullPolicy: Always #Added for showing rolling updates
+        imagePullPolicy: IfNotPresent #Added for showing rolling updates
         resources:
           requests:
             memory: "250Mi"  #Added to showcase scale up and down using HPA on Standard Cluster
