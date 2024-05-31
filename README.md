@@ -6,7 +6,7 @@ Docker Hub Link: https://hub.docker.com/repository/docker/kapoorpriyanka/web-app
 
 Recording Link: (https://nagarro-my.sharepoint.com/:v:/p/priyanka_kapoor/EaRlwqx2mRVBucvMsW_WCggB7DPSrdxfYo-Xw5Lxywl7xw?e=pGHT7o)
 
-Document with Execution Logs and Screenshots: 
+Document with Execution Logs and Screenshots: https://github.com/PriyankaKapoor10/NAGP-Assignment/blob/master/NAGP_Assignemnt_Solution_Document.pdf
 
 Endpoints Exposed: (PLease note: IP needs to be changed here depending on IP exposed by LoadBalancer Service)
 
